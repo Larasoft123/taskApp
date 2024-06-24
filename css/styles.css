@@ -1,0 +1,19 @@
+.delete {
+    border-radius: 12px;
+    border: solid 1px black;
+    padding: 4px;
+}
+
+.delete:hover {
+    cursor: pointer;
+}
+
+.edit {
+    border-radius: 12px;
+    border: solid 1px black;
+    padding: 4px;
+}
+
+.edit:hover {
+    cursor: pointer;
+}
