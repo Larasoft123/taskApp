@@ -85,7 +85,7 @@ $("#registrarTask").on("click", () => {
             // agregar todo al html
             $("#tasksHere").append(auxLi);
             $(`#${auxId}`).append(conntentTaks);
-            $(`#${auxId}`).append(auxTime);
+            // $(`#${auxId}`).append(auxTime);
             $(`#${auxId}`).append(iconDelete);
             $(`#${auxId}`).append(editIcon);
 
@@ -163,7 +163,7 @@ function getTaksToLocalStorage() {
 
             $("#tasksHere").append(auxL);
             $(`#${tarea.id}`).append(conntentTaks);
-            $(`#${tarea.id}`).append(fecha);
+            // $(`#${tarea.id}`).append(fecha);
             $(`#${tarea.id}`).append(iconDelet);
             $(`#${tarea.id}`).append(editIco);
 
@@ -237,7 +237,7 @@ function ordenarTodoYDesordenar() {
 
     if (arrayFromLocal != null) {
         if (count % 2 == 0) {
-            document.getElementById("btnOrder").innerHTML = "Ordenar Al Reves"
+            document.getElementById("btnOrder").innerHTML = "ordenar menos reciente"
             for (let t = 0; t < arrayFromLocal.length; t++) {
                 let elemento = arrayFromLocal[t].id;
                 $(`#${elemento}`).remove()
@@ -270,14 +270,14 @@ function ordenarTodoYDesordenar() {
 
                 $("#tasksHere").append(auxL);
                 $(`#${tarea.id}`).append(conntentTaks);
-                $(`#${tarea.id}`).append(fecha);
+                // $(`#${tarea.id}`).append(fecha);
                 $(`#${tarea.id}`).append(iconDelet);
                 $(`#${tarea.id}`).append(editIco);
 
             })
 
         } else {
-            document.getElementById("btnOrder").innerHTML = "reordenar"
+            document.getElementById("btnOrder").innerHTML = "reordenar por mas reciente"
             for (let i = 0; i < arrayFromLocal.length; i++) {
                 let element = arrayFromLocal[i].id;
                 // eliminar el elemento
@@ -316,7 +316,7 @@ function ordenarTodoYDesordenar() {
 
                 $("#tasksHere").append(auxL);
                 $(`#${tarea.id}`).append(conntentTaks);
-                $(`#${tarea.id}`).append(fecha);
+                // $(`#${tarea.id}`).append(fecha);
                 $(`#${tarea.id}`).append(iconDelet);
                 $(`#${tarea.id}`).append(editIco);
 
